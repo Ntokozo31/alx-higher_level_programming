@@ -4,6 +4,10 @@
 
 class Square:
 
-    """Represent a square."""
+    """
+    Represents a Square.
+
+    This class serves as a blueprint to create a square objects.
+    """
 
     pass

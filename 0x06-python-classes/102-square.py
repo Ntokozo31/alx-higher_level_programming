@@ -20,8 +20,8 @@ class Square:
         return self.__size
 
     @size.setter
-    """Set the size of the square."""
     def size(self, value):
+        """Set the size of the square."""
         if not isinstance(value, (float, int)):
             raise TypeError("size must be a number")
         elif value < 0:
@@ -35,33 +35,35 @@ class Square:
     def __eq__(self, other):
         """Check if two squares are equl."""
         if not isinstance(other, Square):
-            return False
+            return NotImplemented
         return self.area() == other.area()
 
     def __ne__(self, other):
         """Check if two squares are not equal."""
-        return not self == other
+        if not isinstance(other, Square):
+            return NotImplemented
+        return self.area() != other.area()
 
     def __gt__(self, other):
         """Check if one square is greater than the other"""
         if not isinstance(other, Square):
-            raise TypeError("cannot compere Square with non-Square object")
+            return NotImplemented
         return self.area() > other.area()
 
     def __lt__(self, other):
         """Check if one square is less than the other."""
         if not isinstance(other, Square):
-            raise TypeError("cannot compere Square with non-Square object")
+            return NotImplemented
         return self.area() < other.area()
 
     def __ge__(self, other):
         """Check if one square is greater than or equal to the other."""
         if not isinstance(other, Square):
-            raise TypeError("cannot compere Square with non-Square object")
+            return NotImplemented
         return self.area() >= other.area()
 
     def __le__(self, other):
         """Check if one square is less than or equal to the other."""
         if not isinstance(other, Square):
-            raise TypeError("cannot compere Square with non-Square object")
+            return NotImplemented
         return self.area() <= other.area()

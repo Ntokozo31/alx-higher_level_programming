@@ -97,7 +97,7 @@ class Rectangle:
 
     def repr(self):
         """Return a string represatation of rectangle."""
-        rect = "Rectangle (" +str(self.__width)
+        rect = "Rectangle (" + str(self.__width)
         rect += "," + str(self.__height) + ")"
         return (rect)
 

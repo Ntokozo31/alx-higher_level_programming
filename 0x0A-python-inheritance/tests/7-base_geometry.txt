@@ -1,0 +1,45 @@
+class BaseGeometry:
+    """Base class representing geometric entities."""
+
+    def area(self):
+        """
+        Calculate the area of base geometric.
+
+        This method raises an Exception because it's not implemented.
+
+        >>> bg = BaseGeometry()
+        >>> bg.area()
+        Traceback (most recent call last):
+            ...
+        Exception: area() is not implemented
+        """
+        raise Exception("area() is not implemented")
+
+    def integer_validator(self, name, value):
+        """
+        Validate the value as an integer greater than 0.
+
+        Args:
+            name (str): The name of the value being validated.
+            value (int): The value to be validated.
+
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is less than or equal to 0.
+
+        Examples:
+            >>> bg = BaseGeometry()
+            >>> bg.integer_validator("width", 10)
+            >>> bg.integer_validator("height", -5)
+            Traceback (most recent call last):
+                ...
+            ValueError: height must be greater than 0
+            >>> bg.integer_validator("length", "abc")
+            Traceback (most recent call last):
+                ...
+            TypeError: length must be an integer
+	"""
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
+        if value <= 0:
+            raise ValueError(f"{name} must be greater than 0")

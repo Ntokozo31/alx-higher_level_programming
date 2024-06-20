@@ -13,5 +13,5 @@ if (isNaN(size)) {
   for (let i = 0; i < size; i++) {
     // Print a raw of 'X' charachetrs
     console.log('X'.repeat(size));
-    }
+  }
 }

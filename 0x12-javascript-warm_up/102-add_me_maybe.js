@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 // Define the function that increments the number and calls another function
-function addMeMaybe(number, theFunction) {
+function addMeMaybe (number, theFunction) {
   number++;
   theFunction(number);
 }

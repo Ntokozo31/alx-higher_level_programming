@@ -10,7 +10,7 @@ import requests
 # We check if the script is run directly
 if __name__ == "__main__":
     # We get our URL
-    req = requests.get("https://alx-intranet.hbtn.io/status")
-    tex = req.text
+    r = requests.get("https://alx-intranet.hbtn.io/status")
+    t = r.text
     # Now it time to print
-    print("Body response \n\t - type: {}\n\t - content: {}".format(type(tex), tex))
+    print("Body response \n\t - type: {}\n\t - content: {}".format(type(t), t))

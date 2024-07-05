@@ -21,11 +21,10 @@ if __name__ == "__main__":
         print("Body response")
 
         #Let us print the type of our response body
-        print(f"\t - type {type(my_body)}")
+        print("\t - type: {}".format(type(my_body)))
 
         #Let print the core content of response of the body
-        print(f"\t - {my_body}")
+        print("\t - content: {}".format(my_body))
 
         #Let print UFT-8 decoded content of the response of our body
-        print(f"\t - utf-8 content: {my_body.decode('utf-8')}")
-
+        print("\t - utf-8 content: {}".format(my_body.decode("utf-8")))

@@ -12,11 +12,11 @@ if __name__ == "__main__":
     # Assign our argumens
     argv = sys.argv
     url = argv[1]
-    email =argv[2]
-    data = urllib.parse.urlencode({"email": email})
-    data = data.encode('ascii')
+    email = argv[2]
+    DATA = urllib.parse.urlencode({"email": email})
+    DATA = DATA.encode('ascii')
 
     # We open our url with our parameter
-    with urllib.request.urlopen(url, data) as response:
+    with urllib.request.urlopen(url, DATA) as response:
         # We print out
         print(response.read().decode("utf-8"))

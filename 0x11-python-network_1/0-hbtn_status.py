@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-# We are going to write a script that will facth a URL
+"""
+We are going to write a script that will facth a URL
+"""
 
 import urllib.request
 

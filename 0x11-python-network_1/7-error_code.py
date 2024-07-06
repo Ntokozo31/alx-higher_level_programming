@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 
-# We are importing necessary modules
+"""
+we are writting a script that takes in URL
+and displays the body of response
+"""
+
 import requests
 import sys
 
-# We check if the script is run directly
 if __name__ == "__main__":
     r = requests.get(sys.argv[1])
     if r.status_code >= 400:

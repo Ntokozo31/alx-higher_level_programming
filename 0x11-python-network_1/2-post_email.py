@@ -3,11 +3,9 @@
 # We are going to write a scrip that will take url and email
 # We are going to check if the script is run dicectly
 
-# we import neccesary modules here
 from urllib import request, parse
 import sys
 
-# We check if the code is run directly
 if __name__ == "__main__":
 
     # Assign our argumens

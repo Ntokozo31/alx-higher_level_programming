@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-"""We are going to send a request to URL and displays the body of the response"""
+"""
+We are going to send a request to URL
+and displays the body of the response
+"""
 
 
 if __name__ == '__main__':

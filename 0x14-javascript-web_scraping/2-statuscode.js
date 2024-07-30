@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 // Status of get request
 
 

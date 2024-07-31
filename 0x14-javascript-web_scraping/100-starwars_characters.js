@@ -10,6 +10,7 @@ request(url, (error, response, body) => {
   } else {
     const content = JSON.perse(body);
     const characters = content.characters;
+    //console.log(charecters);
     for (const character of characters) {
       request.get(character, (error, response, body) => {
 	if (error) {
